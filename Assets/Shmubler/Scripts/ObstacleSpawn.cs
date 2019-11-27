@@ -4,7 +4,7 @@ using System.Collections;
 public class ObstacleSpawn : MonoBehaviour
 {
     public GameObject[] obstacles;
-    public float targetTime = 3.0f;
+    private float targetTime = 9.0f;
 
     private void Start()
     {

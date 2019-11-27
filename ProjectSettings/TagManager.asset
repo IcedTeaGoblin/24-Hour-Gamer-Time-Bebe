@@ -10,6 +10,10 @@ TagManager:
   - UICoinNumber
   - BlackFade
   - UIBehavior
+  - MuteButton
+  - UIPointController
+  - UIPointNumber
+  - LoadingScreen
   layers:
   - Default
   - TransparentFX

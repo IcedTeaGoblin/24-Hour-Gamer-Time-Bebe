@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Shmubler/GamePlayScene.unity
     guid: 6228fe38c9d92a548b7f106024d138bd
+  - enabled: 1
+    path: Assets/Shmubler/IsThisLoss.unity
+    guid: 47e5faf2a194cbe49b390a02ed2a5654
   m_configObjects: {}

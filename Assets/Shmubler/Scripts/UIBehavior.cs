@@ -10,16 +10,22 @@ public class UIBehavior : MonoBehaviour
 {
     private GameObject sheepNumberTxt;
     private GameObject coinNumberTxt;
+    private GameObject pointNumberTxt;
     public GameObject fadeBlack;
     public GameObject obstacleHitObject;
+    private GameObject muteButton;
     private bool audioMuted = false;
     public AudioMixer mixer;
     private string slider = "MasterVolume";
+    public Sprite[] muteUnMute;
+
     // Start is called before the first frame update
     void Start()
     {
         sheepNumberTxt = GameObject.FindGameObjectWithTag("UISheepNumber");
         coinNumberTxt = GameObject.FindGameObjectWithTag("UICoinNumber");
+        pointNumberTxt = GameObject.FindGameObjectWithTag("UIPointNumber");
+        muteButton = GameObject.FindGameObjectWithTag("MuteButton");
     }
 
     // Update is called once per frame
@@ -27,6 +33,7 @@ public class UIBehavior : MonoBehaviour
     {
         updateSheepText();
         updateMaxSheepText();
+        updatePointsText();
         muteHotKey();
 
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -47,7 +54,15 @@ public class UIBehavior : MonoBehaviour
     {
         if (coinNumberTxt != null)
         {
-            coinNumberTxt.GetComponent<TextMeshProUGUI>().text = (GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().maxSheepNumber.ToString());
+            coinNumberTxt.GetComponent<TextMeshProUGUI>().text = ("MPH: " + (10 + GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().maxSheepNumber * 5).ToString());
+        }
+    }
+
+    private void updatePointsText()
+    {
+        if (pointNumberTxt != null)
+        {
+            pointNumberTxt.GetComponent<TextMeshProUGUI>().text = ("Score: " + (Mathf.Floor(GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().pointNumber) * -1).ToString());
         }
     }
 
@@ -103,11 +118,18 @@ public class UIBehavior : MonoBehaviour
     {
         Debug.Log("Audio Muted");
         mixer.SetFloat(slider, -80.0f);
+        muteButton.GetComponent<SpriteRenderer>().sprite = muteUnMute[0];
     }
 
     private void unMuteAudio()
     {
         Debug.Log("Audio unMuted");
         mixer.SetFloat(slider, 0.0f);
+        muteButton.GetComponent<SpriteRenderer>().sprite = muteUnMute[1];
+    }
+
+    public void restart()
+    {
+        SceneManager.LoadScene(1);
     }
 }

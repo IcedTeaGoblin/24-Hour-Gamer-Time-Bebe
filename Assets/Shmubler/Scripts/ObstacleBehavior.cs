@@ -17,7 +17,10 @@ public class ObstacleBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (gameObject.transform.position.z == player.transform.position.z + 20.0f && gameObject.name == "(Obs) Farmer1")
+        {
+            AudioManager.PlaySound("Human_" + Random.Range(1, 12));
+        }
     }
 
     private void OnTriggerEnter(Collider other)

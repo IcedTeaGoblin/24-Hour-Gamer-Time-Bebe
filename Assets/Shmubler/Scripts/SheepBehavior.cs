@@ -29,6 +29,7 @@ public class SheepBehavior : MonoBehaviour
                 GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber += 1;
                 if (GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber >= GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().maxSheepNumber)
                 {
+                    GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().addFOV();
                     GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().obstacleSpeed -= 0.01f;
                     GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().spawnRate *= 0.95f;
                 }
