@@ -28,7 +28,7 @@ public class SheepBehavior : MonoBehaviour
                 AudioManager.PlaySound("Baa_" + Random.Range(1, 24));
                 GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber += 1;
                 GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().obstacleSpeed -= 0.01f;
-                GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().spawnRate *= 0.99f;
+                GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().spawnRate *= 0.95f;
                 Destroy(gameObject);
             }
         }

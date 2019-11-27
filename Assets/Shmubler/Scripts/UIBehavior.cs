@@ -8,6 +8,7 @@ public class UIBehavior : MonoBehaviour
 {
     private GameObject sheepNumberTxt;
     private GameObject coinNumberTxt;
+    public GameObject fadeBlack;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,5 +53,15 @@ public class UIBehavior : MonoBehaviour
     {
         Debug.Log("Exiting Game...");
         Application.Quit();
+    }
+
+    public void fadeIn()
+    {
+        fadeBlack.GetComponent<Animator>().Play("FadeIn");
+    }
+
+    public void fadeOut()
+    {
+        fadeBlack.GetComponent<Animator>().Play("FadeOut");
     }
 }

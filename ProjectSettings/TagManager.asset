@@ -8,6 +8,8 @@ TagManager:
   - UISheepNumber
   - ScreenShake
   - UICoinNumber
+  - BlackFade
+  - UIBehavior
   layers:
   - Default
   - TransparentFX
