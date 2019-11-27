@@ -302,6 +302,7 @@ GameObject:
   - component: {fileID: 727365461}
   - component: {fileID: 727365460}
   - component: {fileID: 727365459}
+  - component: {fileID: 727365463}
   m_Layer: 0
   m_Name: (Play) Player
   m_TagString: Player
@@ -395,6 +396,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 727365457}
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &727365463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727365457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d74ad0e80c86e14286bf4e1d81a798a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Leaves: {fileID: 5750603982165340298, guid: 1e8200b925e4f7e4a82da25648dcead4, type: 3}
+  Wood: {fileID: 8798981853608943060, guid: dfe000726dd54e043927f8bb30fec73e, type: 3}
 --- !u!1 &1593111277
 GameObject:
   m_ObjectHideFlags: 0
