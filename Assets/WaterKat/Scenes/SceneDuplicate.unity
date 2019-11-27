@@ -180,7 +180,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d711df121af82b4db8a3d53547cda00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnRate: 1
   obstacleSpeed: -0.2
+  sheepNumber: 0
+  coinNumber: 0
 --- !u!4 &133158448
 Transform:
   m_ObjectHideFlags: 0
