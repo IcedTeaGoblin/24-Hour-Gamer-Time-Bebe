@@ -28,6 +28,7 @@ public class ObstacleBehavior : MonoBehaviour
             {
                 scoreAdded = true;
                 AudioManager.PlaySound(hitSound);
+                GameObject.FindGameObjectWithTag("UIBehavior").GetComponent<UIBehavior>().obstacleHit();
                 GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<ScreenShake>().shake(0.2f);
                 GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber -= sheepLoss;
                 Destroy(gameObject);
