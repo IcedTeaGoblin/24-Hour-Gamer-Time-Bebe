@@ -36,7 +36,7 @@ public class ObstacleSpawn : MonoBehaviour
             case 0:
             case 1:
             case 2:
-                Instantiate(obstacles[0], new Vector3(Random.Range(80.0f, 90.0f), 1.0f, 67.0f), Quaternion.identity);
+                Instantiate(obstacles[0], new Vector3(Random.Range(80.0f, 90.0f), 0.719f, 67.0f), Quaternion.identity);
                 break;
             case 3:
                 Instantiate(obstacles[1], new Vector3(Random.Range(80.0f, 90.0f), 0.71f, 67.0f), Quaternion.identity);
