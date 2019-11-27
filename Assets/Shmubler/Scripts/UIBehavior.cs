@@ -20,20 +20,37 @@ public class UIBehavior : MonoBehaviour
     {
         updateSheepText();
         updateCoinText();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            toExit();
+        }
     }
 
     private void updateSheepText()
     {
-        sheepNumberTxt.GetComponent<TextMeshProUGUI>().text = ("Sheep: " + GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber);
+        if (sheepNumberTxt != null)
+        {
+            sheepNumberTxt.GetComponent<TextMeshProUGUI>().text = ("Sheep: " + GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber);
+        }
     }
 
     private void updateCoinText()
     {
-        coinNumberTxt.GetComponent<TextMeshProUGUI>().text = ("Coins: " + GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().coinNumber);
+        if (coinNumberTxt != null)
+        {
+            coinNumberTxt.GetComponent<TextMeshProUGUI>().text = ("Coins: " + GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().coinNumber);
+        }
     }
 
     public void toGamePlayScene()
     {
         SceneManager.LoadScene(1);
+    }
+
+    public void toExit()
+    {
+        Debug.Log("Exiting Game...");
+        Application.Quit();
     }
 }
