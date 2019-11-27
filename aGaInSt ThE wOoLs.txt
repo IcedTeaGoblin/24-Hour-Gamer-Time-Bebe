@@ -1,0 +1,25 @@
+You are a sheep. The farmer is shearing you. The sheep gets angry and decides to shave him/her back.
+
+Sheep: I have a dream. That all sheep are created equal.
+Come on sheeple, we must rise up against our oppressors. First they took our wool, then they took our testicles, next they will take our lives.
+Come, join me, and together we will take their women and enslave their children. We will no longer be the farmed, but the farmers.
+
+Goal of the game is to catch the farmer and shave off his/her hair.
+
+Need to collect more sheep to move faster.
+
+Every level, the farmer moves faster and you must collect more sheep in order to catch them.
+
+Hitting an animal lowers your speed by decreasing the sheep collected.
+
+Hitting a heavy static object resets your speed to zero.
+
+Powerups: sheep magnet(imouto) attracts more sheep, etc, see jenny's thing
+
+Farmer: I'm tired of these motherfucking sheep in this motherfucking plain.
+
+Aggresive farmers make you lose more sheep appear; can kill with shear pickup
+
+end boss fight, several schoolbuses unload children for a field trip. Hordes of five year olds cascade out 
+from the vehicles. the sheep must dodge all the children and defeat the schoolteachers. the sheep capture the schoolbuses
+First the farm, then the world
