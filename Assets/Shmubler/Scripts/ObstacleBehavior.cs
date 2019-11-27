@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WaterKat.AudioManager;
 
 public class ObstacleBehavior : MonoBehaviour
 {
     private bool scoreAdded = false;
     private GameObject player;
+    public string hitSound;
+    public int sheepLoss;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -24,9 +27,9 @@ public class ObstacleBehavior : MonoBehaviour
             if (scoreAdded == false)
             {
                 scoreAdded = true;
+                AudioManager.PlaySound(hitSound);
                 GameObject.FindGameObjectWithTag("ScreenShake").GetComponent<ScreenShake>().shake(0.2f);
-                GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber -= 1;
-                GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().obstacleSpeed += 0.01f;
+                GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber -= sheepLoss;
                 Destroy(gameObject);
             }
         }

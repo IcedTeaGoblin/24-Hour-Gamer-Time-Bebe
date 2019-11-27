@@ -14,13 +14,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void doMovement()
     {
-        if (Input.GetKey(KeyCode.A) && gameObject.transform.position.x > 80.0f)
+        if (Input.GetKey(KeyCode.A) && gameObject.transform.position.x > 81.0f)
         {
-            gameObject.transform.position += new Vector3(-0.2f, 0.0f, 0.0f);
+            gameObject.transform.position += new Vector3(-0.1f, 0.0f, 0.0f);
         }
-        else if (Input.GetKey(KeyCode.D) && gameObject.transform.position.x < 90.0f)
+        else if (Input.GetKey(KeyCode.D) && gameObject.transform.position.x < 89.0f)
         {
-            gameObject.transform.position += new Vector3(0.2f, 0.0f, 0.0f);
+            gameObject.transform.position += new Vector3(0.1f, 0.0f, 0.0f);
         }
     }
 }

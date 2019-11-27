@@ -15,7 +15,7 @@ MonoBehaviour:
   audioMixerGroup: {fileID: 24300002, guid: 42755c087d8177447b9fbc05d96afd18, type: 2}
   audioClip: {fileID: 8300000, guid: 0754a49ce9fb3c5448c74bf4c5936335, type: 3}
   Mute: 0
-  Loop: 0
+  Loop: 1
   Volume: 1
   Pitch: 1
   Reverse: 0

@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2efb009923eb614479ad453cde8313e3, type: 3}
-  m_Name: Baa_1
+  m_Name: Baa_3
   m_EditorClassIdentifier: 
   audioMixerGroup: {fileID: 24300002, guid: 42755c087d8177447b9fbc05d96afd18, type: 2}
-  audioClip: {fileID: 8300000, guid: 17e21f9f8f6065549bef77e8070472d1, type: 3}
+  audioClip: {fileID: 8300000, guid: 833e73fec7ab0b14b8bba736696061fe, type: 3}
   Mute: 0
   Loop: 0
   Volume: 1
   Pitch: 1
   Reverse: 0
-  RandomVolumeModifier: 0.5
+  RandomVolumeModifier: 0
   RandomPitchModifier: 0.5

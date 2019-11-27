@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WaterKat.AudioManager;
 
 public class SheepBehavior : MonoBehaviour
 {
@@ -24,8 +25,10 @@ public class SheepBehavior : MonoBehaviour
             if (scoreAdded == false)
             {
                 scoreAdded = true;
+                AudioManager.PlaySound("Baa_" + Random.Range(1, 8));
                 GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().sheepNumber += 1;
                 GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().obstacleSpeed -= 0.01f;
+                GameObject.FindGameObjectWithTag("SpeedController").GetComponent<SpeedControl>().spawnRate *= 0.95f;
                 Destroy(gameObject);
             }
         }

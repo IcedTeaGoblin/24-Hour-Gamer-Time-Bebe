@@ -47,6 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c46b5b868a9c8a46b91391ce886ef7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitSound: Impact_3
+  sheepLoss: 1
 --- !u!33 &1378064058523653323
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -116,5 +118,5 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9136907, y: 0.9774705, z: 6.1232336e-17}
-  m_Center: {x: 0.0078042746, y: -0.011264756, z: 0}
+  m_Size: {x: 0.35582048, y: 0.9101347, z: 0.1}
+  m_Center: {x: -0.11689028, y: -0.045182303, z: 0}

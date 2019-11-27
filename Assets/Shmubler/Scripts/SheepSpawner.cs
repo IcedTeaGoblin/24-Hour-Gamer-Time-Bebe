@@ -25,7 +25,7 @@ public class SheepSpawner : MonoBehaviour
     void timerEnded()
     {
         spawnSheep();
-        targetTime = Random.Range(5.0f, 10.0f);
+        targetTime = Random.Range(1.0f, 5.0f);
     }
 
     void spawnSheep()
@@ -34,19 +34,19 @@ public class SheepSpawner : MonoBehaviour
         switch(temp)
         {
             case 0:
-                Instantiate(sheep[0], new Vector3(Random.Range(80.0f, 90.0f), 0.205f, 67.0f), Quaternion.identity);
+                Instantiate(sheep[0], new Vector3(Random.Range(81.0f, 89.0f), 0.205f, 67.0f), Quaternion.identity);
                 break;
             case 1:
-                Instantiate(sheep[1], new Vector3(Random.Range(80.0f, 90.0f), 0.205f, 67.0f), Quaternion.identity);
+                Instantiate(sheep[1], new Vector3(Random.Range(81.0f, 89.0f), 0.205f, 67.0f), Quaternion.identity);
                 break;
             case 2:
-                Instantiate(sheep[2], new Vector3(Random.Range(80.0f, 90.0f), 0.205f, 67.0f), Quaternion.identity);
+                Instantiate(sheep[2], new Vector3(Random.Range(81.0f, 89.0f), 0.205f, 67.0f), Quaternion.identity);
                 break;
             case 3:
-                Instantiate(sheep[3], new Vector3(Random.Range(80.0f, 90.0f), 0.205f, 67.0f), Quaternion.identity);
+                Instantiate(sheep[3], new Vector3(Random.Range(81.0f, 89.0f), 0.205f, 67.0f), Quaternion.identity);
                 break;
             case 4:
-                Instantiate(sheep[4], new Vector3(Random.Range(80.0f, 90.0f), 0.205f, 67.0f), Quaternion.identity);
+                Instantiate(sheep[4], new Vector3(Random.Range(81.0f, 89.0f), 0.205f, 67.0f), Quaternion.identity);
                 break;
         }
     }

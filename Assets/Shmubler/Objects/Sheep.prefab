@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4475201915205592997}
   - component: {fileID: 5141968601025106001}
   - component: {fileID: 6939700238646841402}
-  - component: {fileID: 5510050683830776544}
   - component: {fileID: 7978252946020913994}
   m_Layer: 0
   m_Name: Sheep
@@ -106,20 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d479ee5752dee064aa6cd467e9b03a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!64 &5510050683830776544
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3453412485607946180}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!65 &7978252946020913994
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -131,5 +116,5 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.7027054, y: 0.5542469, z: 6.1232336e-17}
+  m_Size: {x: 0.7027054, y: 0.5542469, z: 0.1}
   m_Center: {x: -0.031124115, y: 0.050873756, z: 0}
