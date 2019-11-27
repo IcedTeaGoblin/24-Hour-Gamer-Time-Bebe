@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpeedController
+  - UISheepNumber
+  - ScreenShake
   layers:
   - Default
   - TransparentFX

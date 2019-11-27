@@ -5,4 +5,5 @@ using UnityEngine;
 public class SpeedControl : MonoBehaviour
 {
     public float obstacleSpeed;
+    public int sheepNumber;
 }

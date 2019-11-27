@@ -28,7 +28,6 @@ public class ObstacleMovement : MonoBehaviour
     {
         if (gameObject.transform.position.z < player.gameObject.transform.position.z - 5)
         {
-            speedControl.GetComponent<SpeedControl>().obstacleSpeed -= 0.01f;
             Destroy(gameObject);
         }
     }
