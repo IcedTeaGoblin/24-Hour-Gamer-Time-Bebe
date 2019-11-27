@@ -26,7 +26,7 @@ public class ObstacleMovement : MonoBehaviour
 
     private void doDelete()
     {
-        if (gameObject.transform.position.z < player.gameObject.transform.position.z - 5)
+        if (gameObject.transform.position.z < player.gameObject.transform.position.z - 10)
         {
             Destroy(gameObject);
         }
