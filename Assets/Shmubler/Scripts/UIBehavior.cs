@@ -40,6 +40,7 @@ public class UIBehavior : MonoBehaviour
         {
             toExit();
         }
+
     }
 
     private void updateSheepText()
@@ -68,7 +69,7 @@ public class UIBehavior : MonoBehaviour
 
     public void toGamePlayScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(3);
     }
 
     public void toExit()
@@ -126,10 +127,5 @@ public class UIBehavior : MonoBehaviour
         Debug.Log("Audio unMuted");
         mixer.SetFloat(slider, 0.0f);
         muteButton.GetComponent<SpriteRenderer>().sprite = muteUnMute[1];
-    }
-
-    public void restart()
-    {
-        SceneManager.LoadScene(1);
     }
 }

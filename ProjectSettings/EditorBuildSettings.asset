@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Shmubler/IsThisLoss.unity
     guid: 47e5faf2a194cbe49b390a02ed2a5654
+  - enabled: 1
+    path: Assets/Shmubler/Cutscene.unity
+    guid: 4abba3980b3bdcf4f871da5ab601aa0e
   m_configObjects: {}

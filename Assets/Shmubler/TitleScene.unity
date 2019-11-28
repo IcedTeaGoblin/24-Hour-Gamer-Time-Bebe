@@ -277,6 +277,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 026cc65d5262fd846ab81265dca5e5bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeBlack: {fileID: 0}
+  obstacleHitObject: {fileID: 0}
+  mixer: {fileID: 0}
+  muteUnMute: []
 --- !u!4 &316907532
 Transform:
   m_ObjectHideFlags: 0
