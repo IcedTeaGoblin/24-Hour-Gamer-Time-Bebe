@@ -38,10 +38,18 @@ public class SpeedControl : MonoBehaviour
         }
     }
 
+    public void CreateGameHighScore()
+    {
+        GameObject newObject = new GameObject();
+        TransferClass datascript = newObject.AddComponent<TransferClass>();
+        datascript.Transfer = Mathf.FloorToInt(pointNumber);
+    }
+
     public void gameLost()
     {
         spawnRate = 0.0f;
         obstacleSpeed = 0.0f;
+        CreateGameHighScore();
         GameObject.FindGameObjectWithTag("UIBehavior").GetComponent<UIBehavior>().fadeOut();
     }
 }
